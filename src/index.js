@@ -13,10 +13,12 @@ const App = () => {
     {label: 'Have a lunch', important: false, id: 3}
   ]
   return (
-    <div>
-    <AppHeader />
+    <div className='todo-app'>
+    <AppHeader toDo={1} done={3} />
+    <div className='top-panel d-flex'>
     <SearchPanel />
     <ItemStatusFilter />
+    </div>
     <TodoList todos={todoData}/>
   </div>
   );
